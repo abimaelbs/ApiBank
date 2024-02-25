@@ -1,0 +1,19 @@
+﻿version: '3'
+services:
+
+  #app:
+  #  build: .
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest    
+    container_name: "SqlServerDB"
+    environment:
+      SA_PASSWORD: "SqlServer2019!"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+    ports:
+      - "14330:1433"
+    volumes:
+      - C:\Dados\Volumes\sqlserver:/var/opt/mssql/data
+
+#docker-compose up -d
