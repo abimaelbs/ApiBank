@@ -1,6 +1,5 @@
 # ApiBank
-API para cadastro e importação de conta 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+API para cadastro e importação de conta.
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
