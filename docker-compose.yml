@@ -1,8 +1,11 @@
-﻿version: '3'
-services:
+version: '3.4'
 
-  #app:
-  #  build: .
+services:
+  apibank.web:
+    image: ${DOCKER_REGISTRY-}apibankweb
+    build:
+      context: .
+      dockerfile: src/ApiBank.Web/Dockerfile
 
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2017-latest    
@@ -16,4 +19,4 @@ services:
     volumes:
       - C:\Dados\Volumes\sqlserver:/var/opt/mssql/data
 
-#docker-compose up -d
+# Add docker-compose: https://learn.microsoft.com/pt-br/visualstudio/containers/tutorial-multicontainer?view=vs-2022
